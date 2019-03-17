@@ -1,5 +1,4 @@
-# ga2018-homework6
-Sixth homework for Game Architecture.
+# Game Architecture Homework 5 - Physics
 
 This homework adds a physics directory to the source code.  In it you will find
 the architecture for a rudimentary physics engine.  At a high level, it's
@@ -20,7 +19,7 @@ and collision detection algorithms:
 * Angular dynamics (Bonus)
 
 You will find the pieces of code you need to implement by searching for
-"// TODO: Homework 6" comments in the depot.
+"// TODO: Homework 5" comments in the depot.
 
 When you're done, your code should pass the unit tests in
 ga_intersection.tests.cpp (they are already called from main.cpp), as well as

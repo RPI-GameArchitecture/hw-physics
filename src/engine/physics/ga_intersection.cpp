@@ -178,7 +178,7 @@ bool oobb_vs_plane(const ga_shape* a, const ga_mat4f& transform_a, const ga_shap
 ga_vec3f separating_axis_point_of_collision(const ga_oobb* oobb_a, const ga_oobb* oobb_b, uint32_t min_penetration_index)
 {
 	// This is not the ideal way of doing this, but it should arrive at the correct result.
-	ga_vec3f point_of_intersection;
+	ga_vec3f point_of_intersection;	
 
 	std::vector<ga_vec3f> corners_a;
 	std::vector<ga_vec3f> corners_b;
@@ -309,7 +309,7 @@ bool separating_axis_test(const ga_shape* a, const ga_mat4f& transform_a, const 
 	ga_vec3f min_penetration_axis;
 	uint32_t min_penetration_index = INT_MAX;
 
-	// TODO: Homework 6.
+	// TODO: Homework 5.
 	// First assemble all the axes to test for separation.
 	// Then, for each axis, project the two bounding boxes and check for overlap.
 	// To project a box onto the axis, sum the magnitudes of the projections of the half vectors.

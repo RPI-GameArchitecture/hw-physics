@@ -141,7 +141,7 @@ void ga_physics_world::step_linear_dynamics(ga_frame_params* params, ga_rigid_bo
 		body->_forces.pop_back();
 	}
 
-	// TODO: Homework 6.
+	// TODO: Homework 5.
 	// Step the linear dynamics portion of the rigid body.
 	// Use fourth-order Runge-Kutta numerical integration.
 	// The rigid body's position (as part of the transform) should be updated to its new location.
@@ -150,7 +150,7 @@ void ga_physics_world::step_linear_dynamics(ga_frame_params* params, ga_rigid_bo
 
 void ga_physics_world::step_angular_dynamics(ga_frame_params* params, ga_rigid_body* body)
 {
-	// TODO: Homework 6 BONUS.
+	// TODO: Homework 5 BONUS.
 	// Step the angular dynamics portion of the rigid body.
 	// The rigid body's angular momentum, angular velocity, orientation, and transform
 	// should all be updated with new values.
@@ -181,7 +181,7 @@ void ga_physics_world::resolve_collision(ga_rigid_body* body_a, ga_rigid_body* b
 	// Average the coefficients of restitution.
 	float cor_average = (body_a->_coefficient_of_restitution + body_b->_coefficient_of_restitution) / 2.0f;
 
-	// TODO: Homework 6.
+	// TODO: Homework 5.
 	// First, calculate the impulse j from the collision of body_a and body_b.
 	// The parameter info contains the collision normal.
 	// The rigid bodies' velocities should then be updated to their new values after the impulse is applied.
